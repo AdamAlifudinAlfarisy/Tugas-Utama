@@ -19,17 +19,17 @@ public class subclass {
     
     //variabel harga minuman
     double cocaCola = 5000, qtyCoca, subCoca;
-    double leMineral = 3000, qytmineral, submineral;
-    double pocariSweat = 5000, qytpoca, subpoca;
-    double tehKotak = 3700, qytteh, subteh;
-    double redBull = 13900, qytred, subred;
+    double leMineral = 3000, qytMineral, subMineral;
+    double pocariSweat = 5000, qytPoca, subPoca;
+    double tehKotak = 3700, qytTeh, subTeh;
+    double redBull = 13900, qytRed, subRed;
     
     //variabel harga makanan
-    double betterVanila = 5900, qytbetter,subbetter;
-    double romaMalkistAbon=  4900,qytroma,subroma;
-    double potabeeBBQBeef = 12500,qytpota,subpota;
-    double sukroKacang= 7000,qytsukro,subsukro;
-    double parotCreamMesses = 12000,qytparot,subparot;
+    double betterVanila = 5900, qytBetter,subBetter;
+    double romaMalkistAbon=  4900,qytRoma,subRoma;
+    double potabeeBBQBeef = 12500,qytPota,subPota;
+    double sukroKacang= 7000,qytSukro,subSukro;
+    double parotCreamMesses = 12000,qytParot,subParot;
     String makanan, minuman, jawab;
     
     void transaksi() {
