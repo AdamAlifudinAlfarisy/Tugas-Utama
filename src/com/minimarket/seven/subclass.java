@@ -45,7 +45,8 @@ public class subclass {
         System.out.println(" 8   |       Potabee BBQ Beef 120g      |       Rp. 12.500,-   |");
         System.out.println(" 9   |       Sukro Kacang 120g          |       Rp. 7.000,-    |");
         System.out.println(" 10  |       Parot Cream Messes 200g    |       Rp. 12.000,-   |");
-        System.out.print("Masukan Pilihan Anda : (1-10) ");
+        System.out.println("----------------------------------------------------------------");
+        System.out.print("Masukan Pilihan Anda (1-10) : ");
         pesan = input.nextInt();
         switch (pesan) {
             case (1):
@@ -98,21 +99,21 @@ public class subclass {
                 beli6 = true; 
                 break;
             case (8):
-                System.out.println("\nPilihan Anda        :Potabee BBQ Beef 120g  ");
+                System.out.println("\nPilihan Anda        : Potabee BBQ Beef 120g  ");
                 System.out.print("Berapa pcs          : ");  
                 qytPota=input.nextDouble();
                 subPota=qytPota*potabeeBBQBeef;
                 beli7 = true;
             break;
             case (9):
-                System.out.println("\nPilihan Anda        :Sukro Kacang 120g  ");
+                System.out.println("\nPilihan Anda        : Sukro Kacang 120g  ");
                 System.out.print("Berapa pcs          : ");  
                 qytSukro=input.nextDouble();
                 subSukro=sukroKacang*qytSukro;
                 beli8 = true;
             break;
             case (10):
-                System.out.println("\nPilihan Anda        :Parot Cream Messes 200g  ");
+                System.out.println("\nPilihan Anda        : Parot Cream Messes 200g  ");
                 System.out.print("Berapa pcs          : "); 
                 qytParot=input.nextDouble();
                 subParot=qytParot*parotCreamMesses;
@@ -121,7 +122,7 @@ public class subclass {
             default:
                 System.err.println("Mohon maaf input salah!");
         }            
-            System.out.println("Ingin Menambah pembelian? y/n");
+            System.out.print("Ingin Menambah pembelian? y/n : ");
             jawab = input.next();
         }while(jawab.equals("y"));
     } 
