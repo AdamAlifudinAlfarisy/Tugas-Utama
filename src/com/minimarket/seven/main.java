@@ -13,6 +13,7 @@ public class main {
                
         System.out.println("----------- Selamat Datang di Minimarket Seven ----------------");
         System.out.println("---------------- Jaminan Harga Termurah -----------------------");
+        objek.transaksi();
         
     }
     
