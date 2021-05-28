@@ -19,17 +19,17 @@ public class subclass {
     
     //variabel harga minuman
     double cocaCola = 5000, qtyCoca, subCoca;
-    double leMineral = 3000;
-    double pocariSweat = 5000;
-    double tehKotak = 3700;
-    double redBull = 13900;
+    double leMineral = 3000, qytmineral, submineral;
+    double pocariSweat = 5000, qytpoca, subpoca;
+    double tehKotak = 3700, qytteh, subteh;
+    double redBull = 13900, qytred, subred;
     
     //variabel harga makanan
-    double betterVanila = 5900;
-    double romaMalkistAbon=  4900;
-    double potabeeBBQBeef = 12500;
-    double sukroKacang= 7000;
-    double parotCreamMesses = 12000;
+    double betterVanila = 5900, qytbetter,subbetter;
+    double romaMalkistAbon=  4900,qytroma,subroma;
+    double potabeeBBQBeef = 12500,qytpota,subpota;
+    double sukroKacang= 7000,qytsukro,subsukro;
+    double parotCreamMesses = 12000,qytparot,subparot;
     String makanan, minuman, jawab;
     
     void transaksi() {
@@ -56,14 +56,18 @@ public class subclass {
                 beli[0] = true;                
             break;                     
             case (2):
-                System.out.println("\nPilihan Anda        : SR - Max");
-                System.out.println("Harga               : Rp. 10000,-/liter");
-                System.out.print("Berapa Rupiah       : Rp. ");
+                System.out.println("\nPilihan Anda        : Le Mineral 600ml");
+                System.out.print("Berapa pcs       : ");
+                qytmineral=input.nextInt();
+                submineral=leMineral*qytmineral;
+                beli[1]=true;
             break;                     
             case (3):
-                System.out.println("\nPilihan Anda        : Super - SR");
-                System.out.println("Harga               : Rp. 15000,-/liter");
-                System.out.print("Berapa Rupiah       : Rp. ");
+                System.out.println("\nPilihan Anda        : Pocari Sweat 500ml ");
+                System.out.print("Berapa pcs       : ");
+                qytpoca=input.nextInt();
+                subpoca=pocariSweat*qytpoca;
+                beli[2]=true;
             break;                     
             default:
                 System.err.println("Mohon maaf input salah!");
