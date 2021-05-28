@@ -58,15 +58,15 @@ public class subclass {
             case (2):
                 System.out.println("\nPilihan Anda        : Le Mineral 600ml");
                 System.out.print("Berapa pcs       : ");
-                qytmineral=input.nextInt();
-                submineral=leMineral*qytmineral;
+                qytMineral=input.nextInt();
+                subMineral=leMineral*qytMineral;
                 beli[1]=true;
             break;                     
             case (3):
                 System.out.println("\nPilihan Anda        : Pocari Sweat 500ml ");
                 System.out.print("Berapa pcs       : ");
-                qytpoca=input.nextInt();
-                subpoca=pocariSweat*qytpoca;
+                qytPoca=input.nextInt();
+                subPoca=pocariSweat*qytPoca;
                 beli[2]=true;
             break;                     
             default:
