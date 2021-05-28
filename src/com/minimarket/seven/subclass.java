@@ -7,6 +7,7 @@ package com.minimarket.seven;
  */
 public class subclass {
     
+    int bayar, total, kembalian, diskon, kekurangan;
     
     
 }
