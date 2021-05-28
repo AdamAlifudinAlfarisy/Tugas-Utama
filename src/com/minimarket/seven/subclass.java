@@ -14,7 +14,7 @@ public class subclass {
           
     //membuat variabel
     double bayar, total, kembalian, diskon, kekurangan;
-    boolean beli[];
+    boolean beli, beli1, beli2, beli3, beli4, beli5, beli6, beli7, beli8, beli9;
     int pesan;
     
     //variabel harga minuman
@@ -50,73 +50,73 @@ public class subclass {
         switch (pesan) {
             case (1):
                 System.out.println("\nPilihan Anda        : Coca Cola 350ml");
-                System.out.print("Berapa pcs       : ");
-                qytCoca = input.nextInt();
-                subCoca = cocaCola * qytCoca;
-                beli[0] = true;                
+                System.out.print("Berapa pcs          : ");
+                qytCoca = input.nextDouble();
+                subCoca = cocaCola * qytCoca;                
+                beli = true;
             break;                     
             case (2):
                 System.out.println("\nPilihan Anda        : Le Mineral 600ml");
-                System.out.print("Berapa pcs       : ");
-                qytMineral=input.nextInt();
+                System.out.print("Berapa pcs          : ");
+                qytMineral=input.nextDouble();
                 subMineral=leMineral*qytMineral;
-                beli[1]=true;
+                beli1 = true;
             break;                     
             case (3):
                 System.out.println("\nPilihan Anda        : Pocari Sweat 500ml ");
-                System.out.print("Berapa pcs       : ");
-                qytPoca=input.nextInt();
+                System.out.print("Berapa pcs          : ");
+                qytPoca=input.nextDouble();
                 subPoca=pocariSweat*qytPoca;
-                beli[2]=true;
+                beli2 = true;
             break;
             case (4):
                 System.out.println("\nPilihan Anda        : Teh Kotak 200ml ");
-                System.out.print("Berapa pcs       : ");
-                qytTeh=input.nextInt();
+                System.out.print("Berapa pcs          : ");
+                qytTeh=input.nextDouble();
                 subTeh=tehKotak*qytTeh;
-                beli[3]=true;
+                beli3 = true;
             break;
             case (5):
                 System.out.println("\nPilihan Anda        : Red Bull Kaleng 250ml ");
-                System.out.print("Berapa pcs       : ");
-                qytRed=input.nextInt();
+                System.out.print("Berapa pcs          : ");
+                qytRed=input.nextDouble();
                 subRed=qytRed*redBull;
-                beli[5]=true;
+                beli4 = true;
             break;
             case (6):
                 System.out.println("\nPilihan Anda        : Better Vanila 120g ");
-                System.out.print("Berapa pcs       : ");
-                qytBetter=input.nextInt();
+                System.out.print("Berapa pcs          : ");
+                qytBetter=input.nextDouble();
                 subBetter=betterVanila*qytBetter;
-                beli[6]=true;
+                beli5 = true; 
             break;
             case (7):
                 System.out.println("\nPilihan Anda        : Roma Malkist Abon 135g ");
-                System.out.print("Berapa pcs       : ");
-                qytRoma=input.nextInt();
+                System.out.print("Berapa pcs          : ");
+                qytRoma=input.nextDouble();
                 subRoma=qytRoma*romaMalkistAbon;
-                beli[7]=true;
+                beli6 = true; 
                 break;
             case (8):
                 System.out.println("\nPilihan Anda        :Potabee BBQ Beef 120g  ");
-                System.out.print("Berapa pcs       : ");  
-                qytPota=input.nextInt();
+                System.out.print("Berapa pcs          : ");  
+                qytPota=input.nextDouble();
                 subPota=qytPota*potabeeBBQBeef;
-                beli[8]=true;
+                beli7 = true;
             break;
             case (9):
                 System.out.println("\nPilihan Anda        :Sukro Kacang 120g  ");
-                System.out.print("Berapa pcs       : ");  
-                qytSukro=input.nextInt();
+                System.out.print("Berapa pcs          : ");  
+                qytSukro=input.nextDouble();
                 subSukro=sukroKacang*qytSukro;
-                beli[9]=true;
+                beli8 = true;
             break;
             case (10):
                 System.out.println("\nPilihan Anda        :Parot Cream Messes 200g  ");
-                System.out.print("Berapa pcs       : "); 
-                qytParot=input.nextInt();
+                System.out.print("Berapa pcs          : "); 
+                qytParot=input.nextDouble();
                 subParot=qytParot*parotCreamMesses;
-                beli[10]=true;
+                beli9 = true; 
             break;
             default:
                 System.err.println("Mohon maaf input salah!");
