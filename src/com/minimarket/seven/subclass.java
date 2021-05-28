@@ -68,7 +68,56 @@ public class subclass {
                 qytPoca=input.nextInt();
                 subPoca=pocariSweat*qytPoca;
                 beli[2]=true;
-            break;                     
+            break;
+            case (4):
+                System.out.println("\nPilihan Anda        : Teh Kotak 200ml ");
+                System.out.print("Berapa pcs       : ");
+                qytTeh=input.nextInt();
+                subTeh=tehKotak*qytTeh;
+                beli[3]=true;
+            break;
+            case (5):
+                System.out.println("\nPilihan Anda        : Red Bull Kaleng 250ml ");
+                System.out.print("Berapa pcs       : ");
+                qytRed=input.nextInt();
+                subRed=qytRed*redBull;
+                beli[5]=true;
+            break;
+            case (6):
+                System.out.println("\nPilihan Anda        : Better Vanila 120g ");
+                System.out.print("Berapa pcs       : ");
+                qytBetter=input.nextInt();
+                subBetter=betterVanila*qytBetter;
+                beli[6]=true;
+            break;
+            case (7):
+                System.out.println("\nPilihan Anda        : Roma Malkist Abon 135g ");
+                System.out.print("Berapa pcs       : ");
+                qytRoma=input.nextInt();
+                subRoma=qytRoma*romaMalkistAbon;
+                beli[7]=true;
+                break;
+            case (8):
+                System.out.println("\nPilihan Anda        :Potabee BBQ Beef 120g  ");
+                System.out.print("Berapa pcs       : ");  
+                qytPota=input.nextInt();
+                subPota=qytPota*potabeeBBQBeef;
+                beli[8]=true;
+            break;
+            case (9):
+                System.out.println("\nPilihan Anda        :Sukro Kacang 120g  ");
+                System.out.print("Berapa pcs       : ");  
+                qytSukro=input.nextInt();
+                subSukro=sukroKacang*qytSukro;
+                beli[9]=true;
+            break;
+            case (10):
+                System.out.println("\nPilihan Anda        :Parot Cream Messes 200g  ");
+                System.out.print("Berapa pcs       : "); 
+                qytParot=input.nextInt();
+                subParot=qytParot*parotCreamMesses;
+                beli[10]=true;
+            break;
             default:
                 System.err.println("Mohon maaf input salah!");
         }            
