@@ -1,5 +1,7 @@
 package com.minimarket.seven;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Adam Alifudin Alifudin
@@ -7,19 +9,67 @@ package com.minimarket.seven;
  */
 public class subclass {
     
+    // membuat scanner baru
+    Scanner input = new Scanner(System.in);    
+          
+    //membuat variabel
     double bayar, total, kembalian, diskon, kekurangan;
-    double cocaCola = 5000;
+    boolean beli[];
+    int pesan, qty[], i;
+    
+    //variabel harga minuman
+    double cocaCola = 5000, qtyCoca, subCoca;
     double leMineral = 3000;
     double pocariSweat = 5000;
     double tehKotak = 3700;
     double redBull = 13900;
+    
+    //variabel harga makanan
     double betterVanila = 5900;
     double romaMalkistAbon=  4900;
     double potabeeBBQBeef = 12500;
     double sukroKacang= 7000;
     double parotCreamMesses = 12000;
-    String makanan, minuman ;
+    String makanan, minuman, jawab;
     
-    
-    
+    void transaksi() {
+        do {            
+        System.out.println(" No  |            Nama Barang           |     Harga Barang     |");
+        System.out.println(" 1   |       Coca Cola 350ml            |       Rp. 5.000,-    |");
+        System.out.println(" 2   |       Le Mineral 600ml           |       Rp. 3.000,-    |");
+        System.out.println(" 3   |       Pocari Sweat 500ml         |       Rp. 5.000,-    |");
+        System.out.println(" 4   |       Teh Kotak 200ml            |       Rp. 3.700,-    |");
+        System.out.println(" 5   |       Red Bull Kaleng 250ml      |       Rp. 13.900,-   |");
+        System.out.println(" 6   |       Better Vanila 120g         |       Rp. 5.900,-    |");
+        System.out.println(" 7   |       Roma Malkist Abon 135g     |       Rp. 4.900,-    |");
+        System.out.println(" 8   |       Potabee BBQ Beef 120g      |       Rp. 12.500,-   |");
+        System.out.println(" 9   |       Sukro Kacang 120g          |       Rp. 7.000,-    |");
+        System.out.println(" 10  |       Parot Cream Messes 200g    |       Rp. 12.000,-   |");
+        System.out.print("Masukan Pilihan Anda : (1-10) ");
+        pesan = input.nextInt();
+        switch (pesan) {
+            case (1):
+                System.out.println("\nPilihan Anda        : Coca Cola 350ml");
+                System.out.print("Berapa pcs       : ");
+                qtyCoca = input.nextInt();
+                subCoca = cocaCola * qtyCoca;
+                beli[0] = true;                
+            break;                     
+            case (2):
+                System.out.println("\nPilihan Anda        : SR - Max");
+                System.out.println("Harga               : Rp. 10000,-/liter");
+                System.out.print("Berapa Rupiah       : Rp. ");
+            break;                     
+            case (3):
+                System.out.println("\nPilihan Anda        : Super - SR");
+                System.out.println("Harga               : Rp. 15000,-/liter");
+                System.out.print("Berapa Rupiah       : Rp. ");
+            break;                     
+            default:
+                System.err.println("Mohon maaf input salah!");
+        }            
+            System.out.println("Ingin Menambah pembelian? y/n");
+            jawab = input.next();
+        }while(jawab.equals("y"));
+    } 
 }
