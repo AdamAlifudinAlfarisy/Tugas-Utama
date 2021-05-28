@@ -7,7 +7,13 @@ package com.minimarket.seven;
  */
 public class subclass {
     
-    int bayar, total, kembalian, diskon, kekurangan;
+    double bayar, total, kembalian, diskon, kekurangan;
+    double cocaCola = 5000;
+    double leMineral = 3000;
+    double pocariSweat = 5000;
+    double tehKotak = 3700;
+    double redBull = 13900;
+    
     
     
 }
