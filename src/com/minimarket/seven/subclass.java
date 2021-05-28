@@ -30,7 +30,7 @@ public class subclass {
     double potabeeBBQBeef = 12500,qytPota,subPota;
     double sukroKacang= 7000,qytSukro,subSukro;
     double parotCreamMesses = 12000,qytParot,subParot;
-    String makanan, minuman, jawab;
+    String member, jawab;
     
     void transaksi() {
         do {            
