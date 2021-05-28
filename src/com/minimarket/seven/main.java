@@ -58,6 +58,39 @@ public class main {
             System.out.println(" Parot Cream Messes 200g                 :  Rp. "+df.format(objek.parotCreamMesses)+"       "+df.format(objek.qytParot)+"          Rp. "+df.format(objek.subParot));
         }
         
+        objek.diskon = 0.05 * objek.total;
+                System.out.println("Total Pembayaran    : Rp. " + objek.total);
+                System.out.print("Uang Anda           : Rp. ");
+                objek.bayar = input.nextDouble();
+                while(objek.bayar < objek.total){
+                    objek.kekurangan = objek.total - objek.bayar;
+                    System.err.println("\nMohon Maaf Pembayaran Anda Kurang       : Rp. " + objek.kekurangan);
+                    System.out.print("Masukan Pembayaran Anda                 : Rp. ");
+                    objek.bayar = input.nextInt();
+                    
+                    if (objek.bayar >= objek.total) {
+                        break;
+                    }
+                }
+                objek.kembalian = objek.bayar - objek.total;    
+                
+                System.out.print("Apakah Anda Member? y/n ");
+                objek.member = input.next();
+                
+                if (objek.member == "y") {
+                    System.out.println("\n--------------- Karena Anda Member  ----------------");
+                    System.out.println("------------ Anda Mendapatkan Cashback 5% ------------");
+                    System.out.println("");
+                    System.out.println("Pembayaran          : Rp. "+objek.total);
+                    System.out.println("Uang Anda           : Rp. "+objek.bayar);
+                    System.out.println("CashBack Anda       : Rp. "+objek.diskon);
+                    System.out.println("Kembalian Anda      : Rp. "+objek.kembalian);
+                    System.out.println("------------- Terima Kasih -----------------------");
+                }   else {
+                    System.out.println("Kembalian Anda      : Rp. " + objek.kembalian);
+                    System.out.println("------------- Terima Kasih -----------------------");
+                }
+        
     }
     
 }
