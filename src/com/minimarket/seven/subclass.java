@@ -15,10 +15,10 @@ public class subclass {
     //membuat variabel
     double bayar, total, kembalian, diskon, kekurangan;
     boolean beli[];
-    int pesan, qty[], i;
+    int pesan;
     
     //variabel harga minuman
-    double cocaCola = 5000, qtyCoca, subCoca;
+    double cocaCola = 5000, qytCoca, subCoca;
     double leMineral = 3000, qytMineral, subMineral;
     double pocariSweat = 5000, qytPoca, subPoca;
     double tehKotak = 3700, qytTeh, subTeh;
@@ -51,8 +51,8 @@ public class subclass {
             case (1):
                 System.out.println("\nPilihan Anda        : Coca Cola 350ml");
                 System.out.print("Berapa pcs       : ");
-                qtyCoca = input.nextInt();
-                subCoca = cocaCola * qtyCoca;
+                qytCoca = input.nextInt();
+                subCoca = cocaCola * qytCoca;
                 beli[0] = true;                
             break;                     
             case (2):
